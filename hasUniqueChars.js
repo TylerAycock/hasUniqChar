@@ -25,4 +25,13 @@ function hasUniqChar(str) {
     }
 }
 
+
+function hasUniqChar(str) {
+    const mySet = new Set(str)      //this turns the string into a set whioch acts similarly to an arr
+    if (str.lenght === mySet.size){
+        return true 
+    } else {
+        return false
+    }
+}
 console.log(hasUniqChar(newWord))
